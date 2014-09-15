@@ -19,6 +19,66 @@ body {
 img {
   border: none; }
 
+.avatarBox {
+  border: 3px solid #DDD;
+  width: 65px;
+  height: 65px;
+  -webkit-border-radius: 50%; /* Can also be 55px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+.avatarBox img {
+  margin: 2.5px;
+  -webkit-border-radius: 50%; /* Can also be 50px */
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+ }
+
+.avatarBox img:hover {
+  opacity: 0.8;
+}
+
+.avatar {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    padding: 7px;
+    }
+
+    .avatar:after,
+    .avatar:before {
+        content: "";
+        position: absolute;
+	
+        z-index: 2;
+        top: 3px;
+        left: 800px;
+        right: 800px;
+        bottom: 3px;
+        border: 1px solid #999; 
+        
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%; 
+     
+        box-shadow: 0px 1px 1px 1px #bbb; 
+        } 
+
+    .avatar:after {
+        z-index: 1;
+        border: 5px solid #fff; 
+    
+        -webkit-box-shadow: 0px 0px 0px 50px #fff;
+        -moz-box-shadow: 0px 0px 0px 50px  #fff;
+        box-shadow: 0px 0px 0px 50px  #fff;   
+        }  
+    
+    .avatar img{
+        display: block;
+        }
+
 #go-back-home {
   margin: 40px 0 0; }
   #go-back-home:hover {
@@ -76,7 +136,8 @@ blockquote {
   font-style: normal !important; }
 
 header {
-  text-align: center; }
+   text-align: center;
+}
 
 footer {
   width: 100%;
@@ -96,9 +157,55 @@ footer {
   width: 100%;
   max-width: 600px;
   background: #fff;
-  margin: 40px auto 20px;
+  margin: 10px auto 20px;
   border-radius: 7px;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
+  position: relative; }
+  #container:before, #container:after {
+    content: " ";
+    display: table; }
+  #container:after {
+    clear: both; }
+  #container .block {
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding: 30px 40px 24px;
+    text-align: center; }
+    #container .block:first-child, #container .block + .block {
+      border-top: 0; }
+    #container .block:last-child {
+      border-bottom: 0; }
+    #container .block a.main {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      padding: 2px 2px;
+      margin-right: 12px;
+      margin-bottom: 6px; }
+      #container .block a.main:last-of-type {
+        margin-right: 0; }
+    #container .block .button {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      height: 20px;
+      overflow: hidden; }
+
+#container_wider {
+  *zoom: 1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  margin: 10px auto 20px;
+  border-radius: 7px;
+  border: 2px solid #eee;
   position: relative; }
   #container:before, #container:after {
     content: " ";
@@ -238,7 +345,7 @@ ul.posts .datetime {
   text-align: right; }
 
 section.post {
-  margin: 0 -60px;
+  margin: 0 -50px;
   text-align: left;
   border-top: 0;
   padding: 0; }
@@ -360,3 +467,4 @@ img {
   margin-left: -340px; }
 .paging .right {
   margin-left: 320px; }
+

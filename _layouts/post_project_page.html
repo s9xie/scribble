@@ -1,4 +1,18 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 
 <html>
   <head>
@@ -8,8 +22,8 @@
   </head>
   <body>
     <!--% include header.html %-->
-    <div id='container'>
-      {% include links.html %}
+    <div id='container_wider'>
+      <!--% include links.html %-->
       {% include pages.html %}
       <div class="content">
         <section class='post'>
@@ -18,7 +32,6 @@
             {{ page.title }}
           </h1>
           {{ content }}
-          {% include signoff.html %}
 
 
         </section>
@@ -30,8 +43,6 @@
       {% if page.disqus == 'y' %}
         {% include disqus.html %}
       {% endif %}
-      {% include links.html %}
     </div>
-    <!-- {% include footer.html %} -->
   </body>
 </html>

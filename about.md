@@ -1,10 +1,14 @@
 ---
-layout: page
+layout: page_real
 title: About
 ---
+Hi There. This is Saining Xie.
 
-Give people something to read and get to know you. Here's my attempt: this is [Mu-An](http://muan.co), a designer developer who lives in London at the moment.
+I am a PhD student at [CSE Department](http://cse.ucsd.edu), [UC San Diego](http://ucsd.edu/). My advisor is Professor [Zhuowen Tu](http://pages.ucsd.edu/~ztu). I obtained my bachelor degree from [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/) in 2013.
 
-Tweet at [@muanchiou](http://twitter.com/muanchiou), read my code on [GitHub](http://github.com/muan), see my designs on [Dribbble](http://dribbble.com/muan), find my CV on [LinkedIn](http://uk.linkedin.com/in/muanchiou).
+My research interest includes machine learning (especially deep learning) and its applications in computer vision.
 
-This theme is made by me. You have a nice day. ♥
+I did research internship with [LV group](http://www.lv-nus.org) at National University of Singapore in 2012. And most recently I spent my summer with [Media Analytics Group](http://www.nec-labs.com/research-departments/media-analytics/media-analytics-home), NEC Labs America. 
+
+Welcome to my site and have a good day.
+
